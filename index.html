@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Jacks portfolio</title> 
-</head>
-<body bgcolor = “#ADFC92”margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+<html>
+	
+<head> 
+	<meta charset="UTF-8">
+	
+	<style>
+		
+* {
+	padding: 0;
+	margin: 0;
+	background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-.topnav {
+		    body {
+      background-color: #04AA6D;
+      height: 100%;
+    }
+
+		.topnav {
   overflow: hidden;
-  background-color: #ADFC92;
+  background-color: #333;
 }
 
 .topnav a {
   float: left;
-  color: #ADFC92;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -22,60 +34,106 @@
 }
 
 .topnav a:hover {
-  background-color: #ADFC92;
+  background-color: #ddd;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #ADFC92;
+  background-color: #04AA6D;
   color: white;
+} 
+ 
+ul {
+		margin-top: 100px;
+		}
+		
+.list {
+	    margin-left: 75px;
 }
-</style>
-</head>
-<body>
 
-<div class="topnav">
+.nunya {
+	    margin-left: 150px;
+}
+
+p {
+      font-size: 40px; 
+      margin-left: 30px;
+}
+	
+h1 {
+	  font-size: 50px;
+      text-align: center;
+      color: #012417;
+}
+   
+	
+.container {
+      display: flex;
+      align-items: center; 
+}
+
+.container img {
+      width: 175px; 
+      height: 250px; 
+      position: absolute;
+      top: 70px;
+      right: 18px;
+      border-radius: 25%;
+}
+
+    
+  </style>
+  
+  <title> Portfolio of Jack Monro </title> 
+  </head>
+  
+  <body style="background-image: url(blockimg.jpg); background-repeat: no-repeat;
+  background-size: contain; background-position: center top 180px;">
+  
+  <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
-<h1 style="color:blue; font-size:px50;">Portfolio of Jack Monro</h1>
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
 </div>
 
-	
-<div style="display:flex; flex-direction:row;">
-<div style="width:200px;">
-		<img src="picofjack.jpeg" alt="Picture of Jack" width=150">
+<div class="logo">
 </div>
-<div style="">
-	<p>I am Jack Monro, I am from the United States of America. I have lived in the United Kingdom for about a year. I have a backround in Graphic Design.</p>
+
+
+<div style="padding-left:16px">
+	
+
+	
+	
+  <br>
+<h1 class="blue-text">I am Jack Monro </h1>
+
+
+<div class="container">
+<img src="picofjack.jpeg" alt="Picture of Jack" width="150">
 </div>
+
+<div>
+<!-- img src="blockimg.jpg"-->
+</div>	
+
+<p>I design & develop. </p>
 </div>
 	
 	
-	
-	 <ul>
+	 <ul class="list">
 		<li>Aritst</li>
 		<li>Chef</li>
 		<li>Designer</li>
 		<li>Coder</li>
-		<ul>
+		<ul class="nunya">
 			<li> Las Vegas Academy of the arts</li>
 			<li> Cobbs restauraunt </li>
 			<li> Bath Spa Uni</li>
 			<li>Tommys House Flippers</li>
-		
-<p> For portfolio works page click 
-<a target="_blank" href="file:///Users/ClaudMonro/Documents/Click%20Start%20-%20Jack/portfolio.html">
-HERE</a>
-</p>
-		
 		</ul>
-	</ul>
+		
+		
 </body>
 </html>
 
