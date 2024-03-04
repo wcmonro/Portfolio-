@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<style>
+		  
+
 		   
 * {font-family: Arial, Helvetica, sans-serif;}
 		    
@@ -17,6 +19,7 @@ body {
 .topnav {
    overflow: hidden;
    background-color: #333;
+   z-index: 1;
 }
 
 .topnav a {
@@ -39,13 +42,26 @@ body {
 }
 
 .container {
-  justify-content: space-between;
+    display: flex;
 }
 
 .container img {
-  width: 100%;
-  margin: 0;
+    width: 100%;
 }
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+    position: relative;
+    z-index: 0;
+}
+.container-fluid img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 
 h1 {
       text-align: center;
@@ -70,7 +86,7 @@ h3 {
 .bottom-buttons button {
 	  font-size: 25px;
       padding: 10x;
-      background-color: blue;
+      background-color: #29332F;
       color: white;
       border: none;
       border-radius: 5px;
@@ -86,8 +102,8 @@ h3 {
 <body>
 
 <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="#portfolio">Portfolio</a>
+  <a href="index.html">Home</a>
+  <a class="active" href="#portfolio">Portfolio</a>
   <a href="contact.html">Contact</a>
 </div>
 
@@ -95,22 +111,29 @@ h3 {
  
 </div>
 <br>
-<h1 style="color:blue; font-size:50px;">Portfolio pieces</h1>
+<h1 style="color:#29332F"; font-size:30px;>Portfolio pieces</h1>
 	<h2>Below are some of the pieces I have created in the Click Start course! </h2>
 	<br>
-	<h3><i class="fas fa-arrow-down"></i>   Click on any image below   <i class="fas fa-arrow-down"></i></h3>
-	
-	<div class="container">
-	 <a target="_blank" href= "https://www.canva.com/design/DAF7dGr1_Vc/J4F8O08YUZNaklC37GB8Jg/edit"> <img src="SEO.jpg" alt="Indian Food" style="width:38%;height: auto ;"> </a>
-	<a target="_blank" href="https://www.figma.com/proto/vMYIPLl2bSqpud9IBcV6tT/Untitled?node-id=2-2&starting-point-node-id=2%3A2&mode=design&t=TvsUy6ywmA3MGbps-1"> <img src="Groom.jpg" alt="Mobile groomer ad" style="width:20%; height: 400px ;"> </a>
-	<a target="_blank" href="https://www.canva.com/design/DAF64uICkuQ/ip_Vz8cxuCWcBJgmtfW9sw/edit?utm_content=DAF64uICkuQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> <img src="Flex.jpg" alt="Gym Ad" style="width:38%;height: auto ;"> </a>
-	</div>
-
-	<div class="bottom-buttons">
-  <button>Choki Dhani SEO Strategy</button>
-  <button>Dog Walking App Design</button>
-  <button>Marketing Flex Fitness</button>
+	<h3><i class="fas fa-arrow-down"></i>   Click on buttons below   <i class="fas fa-arrow-down"></i></h3>
+		
+		<div class="bottom-buttons">
+  <button onclick="window.location.href='chokhidhani.pdf'">Choki Dhani SEO Strategy</button>
+  <button onclick="window.location.href='https://www.figma.com/proto/vMYIPLl2bSqpud9IBcV6tT/Untitled?node-id=2-2&starting-point-node-id=2%3A2&mode=design&t=TvsUy6ywmA3MGbps-1'">Dog Walking App Design</button>
+  <button onclick="window.location.href='flexfitness.pdf'">Marketing Flex Fitness</button>
 </div>
+	
+	<!-- maybe save links as a link to a pdf instead of loading a site with allowed access -->
+	<!--add all images into a flat html table with no styling to space across page-->
+    <!-- post CV if you'd like -->
+	<!-- #Allclickstartlearners on slack, join linkedin clickstart alumni group -->
+  <div class="container-fluid">	
+	  <img src="finalweb.png" alt="screenshots of previous projects" usemap="#projectmap">
+	  
+    
+  </div>
+	
+
+
 
 	
 </body>
